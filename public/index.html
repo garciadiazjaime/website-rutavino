@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html ng-app="rvbc">
+<head>
+   <title>{{title}}</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no" />
+   <meta name="description" content="La Ruta del Vino Ensenada es una aplicación donde podrás encontrar información sobre viñedos, restaurantes y hoteles del Valle de Guadalupe" />
+   <meta name="author" content="http://mintitmedia.com" />
+
+   <link href="/css/bootstrap.min.css" rel="stylesheet">
+   <link href="/css/screen.css" rel="stylesheet">
+   <link href="/css/vinos.css" rel="stylesheet">
+   <link rel="icon" type="image/png" href="/images/favicon.png">
+   <script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-46136944-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+   </script>
+</head>
+<body ng-controller="TodoController" class="ruta-de-vino">
+<!-- TITLE BAR -->
+	<div class="row top" id="title_bar">
+		<a href="#" id="search_btn" class="col-xs-2 oli_30x12" title="search">
+   			<span class="glyphicon glyphicon-search"></span>
+   		</a>
+   		<h1 class="col-xs-8 main"><span class="logo"></span> <span>La Ruta del Vino</span></h1>
+   		<a href="#" id="mint_btn" class="col-xs-2">
+   			<span></span>
+   		</a>
+	</div>
+<!-- SHORT PROFILE -->
+	<div id="short_profile" class="row bottom hide">
+		<h1 class="col-xs-9 col-xs-offset-1">
+			<span class="height_control"></span><span id="place_name">{[{selected_place.name}]}</span>
+		</h1>
+		<a href="" class="col-xs-2 oli_30x12" title="info" id="place_more_info" ng-click="show_more_info()">
+   			<span class="glyphicon glyphicon-chevron-up"></span>
+   		</a>
+	</div>
+<!-- SEARCH PANEL -->
+	<div id="search_container" class="hide row fixed_container">
+		<a href="#" class="closer close_panel"></a>
+		<div id="search" class="container search_form col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-1 col-md-4 col-md-offset-1">
+			<div class="form-group control_bar top row">
+				<div class="col-xs-10">
+					<input type="text" class="form-control" placeholder="Buscar" ng-model="query" ng-change="ga_update_search()">
+				</div>
+				<a class="close_btn closer col-xs-2 oli_30x12"><span class="glyphicon glyphicon-remove-sign"></span></a>
+			</div>
+			<div class="list-group" id="list_places">
+				<ul class="list-group-item">
+					<li class="list-group-item-heading place_{[{place.type}]}" ng-repeat="place in places | orderBy:'type':false | filter: query"><a href="" title="" ng-click="set_place_up({[{$index}]})">{[{place.name}]}</a></li>
+				</ul>
+			</div>
+			<ul id="control_places" class="control_bar row bottom">
+				<li class="col-xs-4" id="place_vinedos">
+					<button class="vinedos" ng-click="go_to_category(1)">Viñedos</button>
+				</li>
+				<li class="col-xs-4" id="place_restaurantes">
+					<button class="restaurantes" ng-click="go_to_category(2)">Restaurantes</button>
+				</li>
+				<li class="col-xs-4" id="place_hoteles">
+					<button class="hoteles" ng-click="go_to_category(3)">Hoteles</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!-- MAP -->
+	<div id="map_canvas"></div>
+
+<!-- EXTENDED PROFILE -->
+    <div id="profile_container" class="row fixed_container hidden">
+    	<a href="#" class="closer close_panel"></a>
+		<div class="profile container {[{selected_place.class}]} col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-5 col-md-4 col-md-offset-7">
+			<div class="control_bar top row">
+				<h1 class="col-xs-10">
+					<span class="height_control"></span><span class="title">{[{selected_place.name}]}</span>
+				</h1>
+				<a href="#" class="col-xs-2 closer oli_30x12" title="search"><span class="glyphicon glyphicon-remove-sign"></span></a>
+			</div>
+		
+			<div class="content row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div id="place_image" style="background: url('/images/main_image/{[{selected_place.image}]}')no-repeat 0 0;" >
+							</div>
+						</div>
+					</div>
+					<div class="row padded_top">
+						<div class="col-xs-1 col-xs-offset-1">
+							<span class="glyphicon glyphicon-info-sign"></span>
+						</div>
+						<div class="col-xs-9">{[{selected_place.description}]}</div>
+					</div>
+					<div class="row padded_top">
+						<div class="col-xs-1 col-xs-offset-1">
+							<span class="glyphicon glyphicon-map-marker"></span>
+						</div>
+						<div class="col-xs-9">
+							{[{selected_place.address}]}
+						</div>
+					</div>
+					<div class="row padded_top">
+						<div class="col-xs-1 col-xs-offset-1">
+							<span class="glyphicon glyphicon-earphone"></span>
+						</div>
+						<div class="col-xs-9">
+							<a href="tel:{[{selected_place.telephone}]}" title="call" ng-click="ga_update_place_click('tel')">{[{selected_place.telephone}]}</a>
+						</div>
+					</div>
+					<div class="row padded_top">
+						<div class="col-xs-1 col-xs-offset-1">
+							<span class="glyphicon glyphicon glyphicon-unchecked"></span>
+						</div>
+						<div class="col-xs-9">
+							<a href='{[{selected_place.web}]}' ng-click="ga_update_place_click('web')" title="{[{selected_place.name}]}" target="_blank">{[{selected_place.web}]}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+<!-- INFO MINT -->
+	<div id="info_mint_container" class="hide fixed_container row">
+		<a class="closer close_panel" href="close"></a>
+		<div class="info_mint container col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-5 col-md-4 col-md-offset-7">
+			<div class="control_bar top row">
+				<h1 class="col-xs-8 col-xs-offset-2"></h1>
+				<a href="#" class="col-xs-2 oli_30x12 closer" title="search">
+					<span class="glyphicon glyphicon-remove-sign"></span>
+				</a>
+			</div>
+			<div class="content row">
+				<div class="col-xs-12">
+					<p>
+						Hola,
+					</p>
+					<p>
+						<b>La Ruta del Vino Ensenada</b> es una aplicación que <a href="http://www.mintitmedia.com" title="Mint IT Media" target="_blank">Mint IT Media</a> pone a disposición de la comunidad para fomentar el desarrollo del <b>Valle de Guadalupe</b>.
+					<p>
+					<p>
+						Aquí podrás encontrar información sobre <b>viñedos</b>, <b>restaurantes</b> y <b>hoteles</b> de la zona.
+					</p>
+					<p>
+						Si te interesa que agreguemos más información sobre algun lugar en específico, no dudes en contactarnos.
+					</p>
+					<hr />
+					<ul>
+						<li><a href="http://mintitmedia.com" title="Mint IT Media" target="_blank" id="mint_link" ng-click="ga_update('Mint', 'Click', 'website')">mintitmedia.com</a></li>
+						<li><a href="mailto:info@mintitmedia.com" title="E-mail" ng-click="ga_update('Mint', 'Click', 'email')">info@mintitmedia.com</a></li>
+						<li><a href="tel:6643082240" title="Tel" ng-click="ga_update('Mint', 'Click', 'tel')">(664)308-2240</a></li>
+						<li><a href="https://www.facebook.com/mint.it.media" title="facebook" target="_blank" id="mint_link" ng-click="ga_update('Mint', 'Click', 'fb')">facebook</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END INFO MINT -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js'></script>
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+    <script src='https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js'></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/map_custom_style.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/ga.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+body.ruta-de-vino
+	// ************************** TITLE BAR ********************************
+	#title_bar
+		background: rgba(255, 255, 255, .85)
+		border-bottom: 1px solid #660253
+		h1
+			color: #660253
+		a
+			color: #660253
+			&:hover
+				color: #a30385
+		.logo
+			background: url('/images/logo.png') no-repeat left center
+			width: 53px
+			height: 60px
+		#mint_btn
+			span
+				width: 50px
+				height: 60px
+				display: inline-block
+				background: url(/images/logo_mint.png) no-repeat center top
+				&:hover
+					background-position: center bottom
+	// ************************** SHORT PROFILE ********************************	
+	#short_profile
+		a
+			color: #FFF
+		h1
+			color: #FFF
+	#short_profile.vinedos
+		background: rgba(102, 2, 83, .7)
+		border-top: solid 3px #da00ae
+	   	
+	#short_profile.restaurantes
+		background: rgba(136, 146, 6, .7)
+		border-top: solid 3px #cfdc23
+	   	
+	#short_profile.hoteles
+		background: rgba(136, 117, 2, .7)
+		border-top: solid 3px #e7c600
+	//*************************** GENERAL PANEL **********************************
+	.fixed_container
+		.container
+			background: #FFFFFF
+			.control_bar
+				background: #FFFFFF	
+	// ************************** SEARCH ********************************
+	#search_container
+		#search
+			.control_bar
+				a
+					color: rgba(255, 255, 255, 0.9)
+					&:hover
+						color: #FFF
+			.form-group
+				background: #660253
+				a
+					color: #FFF
+			#list_places
+				li.place_1
+					a
+						color: rgb(102, 2, 83)
+				li.place_2
+					a
+						color: rgb(136, 146, 6)
+				li.place_3
+					a
+						color: #AA7502
+	// ------------------------- CONTROL PLACES ---------------------------
+	#control_places
+		text-align: right
+		list-style: none
+		padding: 0
+		button
+			color: #FFF
+			font-size: 16px
+			border: none
+			background: none
+			text-align: center
+			width: 100%
+			padding: 0
+			height: 60px
+		#place_vinedos
+			background: rgba(102, 2, 83, .7)
+			&:hover
+				background: rgba(102, 2, 83, 1)
+		#place_restaurantes
+			background: rgba(136, 146, 6, .7)
+			&:hover
+				background: rgba(136, 146, 6, 1)
+		#place_hoteles
+			background: rgba(136, 117, 2, .7)
+			&:hover
+				background: rgba(136, 117, 2, 1)
+@media screen and (max-width: 420px)
+	body.ruta-de-vino
+		#control_places
+			button
+				font-size: 12px
+
+body.ruta-de-vino
+	// ************************** BIG PROFILE ********************************
+	#profile_container
+		.profile
+			.content
+				color: #FFF
+		.vinedos
+			border: 1px solid #660253
+			background-color: rgba(102, 2, 83, .7)
+			.control_bar
+				border-bottom: solid 3px #660253
+				h1
+					color: #660253
+				a
+					color: #660253
+					&:hover
+						color: #da00ae
+			#place_image
+				border-bottom: solid 3px #660253
+		.restaurantes
+			border: 1px solid #889206
+			background-color: rgba(136, 146, 6, .7)
+			.control_bar
+				border-bottom: 3px solid #cfdc23
+				h1
+					color: #889206
+				a
+					color: #889206
+					&:hover
+						color: #889206
+			#place_image
+				border-bottom: solid 3px #889206
+		.hoteles
+			border: 1px solid #887502
+			background-color: rgba(136, 117, 2, .7)
+			.control_bar
+				border-bottom: 3px solid #e7c600
+				h1
+					color: #887502
+				a
+					color: #887502
+					&:hover
+						color: #e7c600
+			#place_image
+				border-bottom: solid 3px #887502	
