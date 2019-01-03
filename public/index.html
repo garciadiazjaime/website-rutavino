@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="rvbc">
 <head>
-   <title>{{title}}</title>
+   <title>Viñedos, restaurantes y hoteles del Valle de Guadalupe | La Ruta del Vino Ensenada</title>
    <meta name="viewport" content="width=device-width, user-scalable=no" />
    <meta name="description" content="La Ruta del Vino Ensenada es una aplicación donde podrás encontrar información sobre viñedos, restaurantes y hoteles del Valle de Guadalupe" />
    <meta name="author" content="http://mintitmedia.com" />
@@ -24,7 +24,7 @@
 <body ng-controller="TodoController" class="ruta-de-vino">
 <!-- TITLE BAR -->
 	<div class="row top" id="title_bar">
-		<a href="#" id="search_btn" class="col-xs-2 oli_30x12" title="search">
+		<a href="#" id="search_btn" class="col-xs-2 oli_30x12 hidden" title="search">
    			<span class="glyphicon glyphicon-search"></span>
    		</a>
    		<h1 class="col-xs-8 main"><span class="logo"></span> <span>La Ruta del Vino</span></h1>
@@ -154,9 +154,23 @@
 					<ul>
 						<li><a href="http://mintitmedia.com" title="Mint IT Media" target="_blank" id="mint_link" ng-click="ga_update('Mint', 'Click', 'website')">mintitmedia.com</a></li>
 						<li><a href="mailto:info@mintitmedia.com" title="E-mail" ng-click="ga_update('Mint', 'Click', 'email')">info@mintitmedia.com</a></li>
-						<li><a href="tel:6643082240" title="Tel" ng-click="ga_update('Mint', 'Click', 'tel')">(664)308-2240</a></li>
 						<li><a href="https://www.facebook.com/mint.it.media" title="facebook" target="_blank" id="mint_link" ng-click="ga_update('Mint', 'Click', 'fb')">facebook</a></li>
 					</ul>
+					<hr />
+					<p>
+						Patrocinado por:
+					</p>
+					<ul>
+							<li>
+								<a href="https://www.garitacenter.com" title="Reporte de Garitas" target="_blank">Reporte de Garitas</a>
+							</li>
+							<li>
+									<a href="http://www.noticiasmexico.org" title="Noticias de México" target="_blank">Noticias de México</a>
+								</li>
+							<li>
+								<a href="http://www.playami.com" title="Qué comer en Playas de Tijuana" target="_blank">Qué comer en Playas de Tijuana</a>
+							</li>
+						</ul>
 				</div>
 			</div>
 		</div>
