@@ -87,7 +87,7 @@
 				<div class="col-xs-12">
 					<div class="row">
 						<div class="col-xs-12">
-							<div id="place_image" style="background: url('/images/main_image/{[{selected_place.image}]}')no-repeat 0 0;" >
+							<div id="place_image" style="background: no-repeat 0 0;" >
 							</div>
 						</div>
 					</div>
@@ -95,14 +95,14 @@
 						<div class="col-xs-1 col-xs-offset-1">
 							<span class="glyphicon glyphicon-info-sign"></span>
 						</div>
-						<div class="col-xs-9">{[{selected_place.description}]}</div>
+						<div class="col-xs-9"><span id="place-description"></span></div>
 					</div>
 					<div class="row padded_top">
 						<div class="col-xs-1 col-xs-offset-1">
 							<span class="glyphicon glyphicon-map-marker"></span>
 						</div>
 						<div class="col-xs-9">
-							{[{selected_place.address}]}
+							<span id="place-address"></span>
 						</div>
 					</div>
 					<div class="row padded_top">
@@ -110,7 +110,8 @@
 							<span class="glyphicon glyphicon-earphone"></span>
 						</div>
 						<div class="col-xs-9">
-							<a href="tel:{[{selected_place.telephone}]}" title="call" ng-click="ga_update_place_click('tel')">{[{selected_place.telephone}]}</a>
+							<a id="place-telephone" title="call" ng-click="ga_update_place_click('tel')">
+							</a>
 						</div>
 					</div>
 					<div class="row padded_top">
@@ -118,7 +119,7 @@
 							<span class="glyphicon glyphicon glyphicon-unchecked"></span>
 						</div>
 						<div class="col-xs-9">
-							<a href='{[{selected_place.web}]}' ng-click="ga_update_place_click('web')" title="{[{selected_place.name}]}" target="_blank">{[{selected_place.web}]}</p>
+							<a id="place-web" ng-click="ga_update_place_click('web')" target="_blank"></a></p>
 						</div>
 					</div>
 				</div>
