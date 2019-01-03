@@ -6,6 +6,11 @@
       "express": "3.x",
       "hbs":"*"
    },
+   "scripts": {
+      "dev": "npx http-server public",
+      "google:upload": "gsutil -m cp -r ./public/. gs://www.larutadelvinoensenada.com",
+      "deploy": "npm run google:upload"
+    },
     "engines": {
     "node": "0.10.x",
     "npm": "1.2.x"
