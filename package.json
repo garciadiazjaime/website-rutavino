@@ -8,7 +8,7 @@
    },
    "scripts": {
       "dev": "npx http-server public",
-      "google:upload": "gsutil -m cp -r ./public/. gs://www.larutadelvinoensenada.com",
+      "google:upload": "gsutil -m cp -r ./public/index.html gs://www.larutadelvinoensenada.com",
       "deploy": "npm run google:upload"
     },
     "engines": {
