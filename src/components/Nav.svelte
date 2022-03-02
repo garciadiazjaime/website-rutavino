@@ -1,5 +1,14 @@
 <script>
+	import { publish, subscribe } from "../support/events"
 	export let segment;
+
+	subscribe('update_menu', (path) => {
+		segment = path
+	})
+
+	function clickHandler() {
+		publish('update_menu', this.attributes.href.value.split('/').pop())
+	}
 </script>
 
 <style>
@@ -50,6 +59,9 @@
 
 <nav>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Valle de Guadalupe</a></li>
+		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Ruta del Vino</a></li>
+		<li><a aria-current="{segment === 'restaurantes' ? 'page' : undefined}" href="valle-guadalupe/restaurantes" on:click={clickHandler}>Restaurantes</a></li>
+		<li><a aria-current="{segment === 'hoteles' ? 'page' : undefined}" href="valle-guadalupe/hoteles" on:click={clickHandler}>Hoteles</a></li>
+		<li><a aria-current="{segment === 'vinedos' ? 'page' : undefined}" href="valle-guadalupe/vinedos" on:click={clickHandler}>Viñedos</a></li>
 	</ul>
 </nav>

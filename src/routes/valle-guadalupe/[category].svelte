@@ -1,9 +1,27 @@
 <script>
 	import Lazy from 'svelte-lazy';
 
+  import { publish } from "../../support/events"
+
+  export let category
 	export let places
-	let title = 'Restaurantes, Hoteles y Viñedos | La Ruta del Vino Ensenada'
-	let description = 'La Ruta del Vino, es el nombre que se le da al conjunto de viñedos, restaurantes y hoteles en el Valle de Guadalupe'
+
+  publish('update_menu', category)
+
+  const sections = {
+    vinedos: {
+      title: 'Viñedos en el Valle de Guadalupe',
+      description: 'Encuentra los mejores Viñedos de la Ruta del Vino Ensenada del Valle de Guadalupe'
+    },
+    restaurantes: {
+      title: 'Restaurantes en el Valle de Guadalupe',
+      description: 'Encuentra los mejores Restaurantes de la Ruta del Vino Ensenada del Valle de Guadalupe'
+    },
+    hoteles: {
+      title: 'Hoteles en el Valle de Guadalupe',
+      description: 'Encuentra los mejores Hoteles de la Ruta del Vino Ensenada del Valle de Guadalupe'
+    }
+  }
 
 	const type = {
 		vinedo: 'Viñedo',
@@ -13,12 +31,20 @@
 </script>
 
 <script context="module">
-	export async function preload() {
+	export async function preload(page) {
+    const { category } = page.params;
 		const response = await this.fetch('/places.json');
 		const places = await response.json();
 
+    const adjustedCategory = {
+      vinedos: 'vinedo',
+      restaurantes: 'restaurante',
+      hoteles: 'hotel'
+    }
+
 		return {
-			places
+			places: places.filter(place => place.type === adjustedCategory[category]),
+      category
 		}
 	}
 </script>
@@ -29,7 +55,7 @@
 		list-style-type: none;
 	}
 
-	li {
+  li {
 		margin: 40px 0;
 	}
 
@@ -50,23 +76,23 @@
 		padding: 0 12px;
 	}
 
-	a {
+  a {
 		text-decoration: none;
 	}
 </style>
 
 <svelte:head>
-	<title>{title}</title>
-	<meta property="og:title" content={title}>
-	<meta property="og:description" content={description}>
+	<title>{sections[category].title}</title>
+	<meta property="og:title" content={sections[category].title}>
+	<meta property="og:description" content={sections[category].description}>
 	<meta property="og:image" content="https://www.larutadelvinoensenada.com/banner.webp">
 	<meta property="og:url" content="https://www.larutadelvinoensenada.com/">
-	<meta name="description" content={description}>
+	<meta name="description" content={sections[category].description}>
 	<link href="https://www.google-analytics.com" rel="dns-prefetch">
 </svelte:head>
 
 <div class="cover">
-	<h1>Restaurantes, Hoteles y Viñedos del Valle de Guadalupe</h1>
+	<h1>{sections[category].title}</h1>
 	<h2>La Ruta del Vino Ensenada</h2>
 </div>
 <p>
@@ -87,4 +113,4 @@
 	{/each}
 </ul>
 
-<p>{description}</p>
+<p>{sections[category].description}</p>

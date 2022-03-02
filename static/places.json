@@ -1,6 +1,6 @@
 [{
     "lat": 31.96716,
-    "type": 1,
+    "type": "vinedo",
     "address": "Baja California",
     "lng": -116.65296,
     "name": "Vinícola Retorno",
@@ -11,7 +11,7 @@
   },
   {
     "lat": 31.96713,
-    "type": 1,
+    "type": "vinedo",
     "address": "Santos Degollado",
     "lng": -116.64605,
     "name": "Vinisterra Vineyard",
@@ -22,7 +22,7 @@
   },
   {
     "lat": 31.96527,
-    "type": 1,
+    "type": "vinedo",
     "address": "Baja California",
     "lng": -116.6421,
     "name": "Vinícola Tres Valles",
@@ -33,7 +33,7 @@
   },
   {
     "lat": 32.02667,
-    "type": 1,
+    "type": "vinedo",
     "address": "Carretera Tecate-Ensenada 87.5 San Antonio de las Minas, Valle de Guadalupe",
     "lng": -116.62241,
     "name": "Viñas de la Erre",
@@ -44,7 +44,7 @@
   },
   {
     "lat": 32.11798,
-    "type": 1,
+    "type": "vinedo",
     "address": "Baja California",
     "lng": -116.51705,
     "name": "LA Cetto",
@@ -55,7 +55,7 @@
   },
   {
     "lat": 32.12351,
-    "type": 1,
+    "type": "vinedo",
     "address": "Carretera Federal 3",
     "lng": -116.53945,
     "name": "Domecq",
@@ -66,7 +66,7 @@
   },
   {
     "lat": 32.09486,
-    "type": 1,
+    "type": "vinedo",
     "address": "Carretera Tecate - Ensenada Kilómetro 103",
     "lng": -116.58751,
     "name": "Monte Xanic",
@@ -77,7 +77,7 @@
   },
   {
     "lat": 31.96287,
-    "type": 2,
+    "type": "restaurante",
     "address": "Rancho Cimarrón",
     "lng": -116.63378,
     "name": "Ochentos Pizza",
@@ -88,7 +88,7 @@
   },
   {
     "lat": 32.069187,
-    "type": 3,
+    "type": "hotel",
     "address": "Carretera Federal 3, Baja California, Mexico",
     "lng": -116.580606,
     "name": "Hacienda Guadalupe Hotel",
@@ -99,7 +99,7 @@
   },
   {
     "lat": 31.991215,
-    "type": 2,
+    "type": "restaurante",
     "address": "Km. 91.5 Carr. Ensenada-Tecate",
     "lng": -116.631074,
     "name": "La Cabaña",
@@ -110,7 +110,7 @@
   },
   {
     "lat": 31.992023,
-    "type": 3,
+    "type": "hotel",
     "address": "Carretera Tecate-Ensenada Km 92 ",
     "lng": -116.641116,
     "name": "Hotel Fatima ",
@@ -121,7 +121,7 @@
   },
   {
     "lat": 32.110548,
-    "type": 3,
+    "type": "hotel",
     "address": "Carretera Federal 3, Baja California, México",
     "lng": -116.551723,
     "name": "Encuentro Guadalupe (Formerly Hotel Endemico)",
@@ -132,7 +132,7 @@
   },
   {
     "lat": 32.058327,
-    "type": 2,
+    "type": "restaurante",
     "address": "Km. 83, Carretera Ensenada-Tecate. Valle de Guadalupe, Ensenada, Baja California, Mexico",
     "lng": -116.59399,
     "name": "Laja: Cocina de Baja California",
@@ -143,7 +143,7 @@
   },
   {
     "lat": 31.98299,
-    "type": 2,
+    "type": "restaurante",
     "address": "Kilometer 93.5, Carretera Federal 3, Baja California, México",
     "lng": -116.648527,
     "name": "Restaurant Mustafa",
@@ -154,7 +154,7 @@
   },
   {
     "lat": 31.786451,
-    "type": 1,
+    "type": "vinedo",
     "address": " Calle principal #290 Valle de Guadalupe, Ensenada, Baja California, México",
     "lng": -116.570242,
     "name": "Vinos Fuentes",
@@ -165,7 +165,7 @@
   },
   {
     "lat": 32.112332,
-    "type": 1,
+    "type": "vinedo",
     "address": "Parcela 72-92 Rancho La Gotita, S/n, Valle de Guadalupe, Ensenada, Baja California, México",
     "lng": -116.510614,
     "name": "La casa de Doña Lupe",
@@ -176,7 +176,7 @@
   },
   {
     "lat": 32.095783,
-    "type": 2,
+    "type": "restaurante",
     "address": "Calle Principal #276, Valle de Guadalupe, Ensenada, Baja California, México",
     "lng": -116.572395,
     "name": "Casa de la Familia Samarín",
@@ -187,7 +187,7 @@
   },
   {
     "lat": 32.513562,
-    "type": 1,
+    "type": "vinedo",
     "address": "Km. 7.5 Carretera Federal #3 Tecate-Ensenada, Baja California, México",
     "lng": -116.616486,
     "name": "Vinos Tanama",
@@ -198,7 +198,7 @@
   },
   {
     "lat": 32.414748,
-    "type": 1,
+    "type": "vinedo",
     "address": "Valle de Las Palmas (Baja California), 28 kilómetros al Sur de la ciudad de Tecate y 56 kilómetros al Norte del Valle de Guadalupe",
     "lng": -116.63681,
     "name": "Viñedos Don Juan",
@@ -209,7 +209,7 @@
   },
   {
     "lat": 32.126779,
-    "type": 1,
+    "type": "vinedo",
     "address": "Km 73 carretera Tecate Ensenada, Valle de Guadalupe, Ensenada, Baja California, México",
     "lng": -116.53347,
     "name": "Paralelo",
@@ -220,7 +220,7 @@
   },
   {
     "lat": 32.101044,
-    "type": 1,
+    "type": "vinedo",
     "address": "Fondo Calle 10 s/n Francisco Zarco, Ensenada, Baja California, México",
     "lng": -116.56688,
     "name": "Tintos del Norte 32",
@@ -231,7 +231,7 @@
   },
   {
     "lat": 32.062228,
-    "type": 3,
+    "type": "hotel",
     "address": "Km 82.5, Ensenada, Baja California, México",
     "lng": -116.590648,
     "name": "Rancho María Teresa",
@@ -242,7 +242,7 @@
   },
   {
     "lat": 32.080829,
-    "type": 3,
+    "type": "hotel",
     "address": "Km 82.5, Carr. Ensenada – Tecate, Ejido El Porvenir, Baja California, México",
     "lng": -116.587029,
     "name": "Casa de Guadalupe",
@@ -253,7 +253,7 @@
   },
   {
     "lat": 32.497402,
-    "type": 1,
+    "type": "vinedo",
     "address": "Km 11, Carr. Tecate - Ensenada, Baja California, México",
     "lng": -116.58681,
     "name": "Agrifolia (Viñedos Ulloa)",
@@ -264,7 +264,7 @@
   },
   {
     "lat": 32.567395,
-    "type": 1,
+    "type": "vinedo",
     "address": "Km 118, Carr. Tecate - Mexicali, Baja California, México",
     "lng": -116.494049,
     "name": "Viñedos Rosa de Castilla",
@@ -275,7 +275,7 @@
   },
   {
     "lat": 32.051353,
-    "type": 1,
+    "type": "vinedo",
     "address": "Villa Montefiori, Baja California, México",
     "lng": -116.668435,
     "name": "Villa Montefiori",
@@ -286,7 +286,7 @@
   },
   {
     "lat": 32.09952,
-    "type": 1,
+    "type": "vinedo",
     "address": "Ej. El Porvenir, Valle de Guadalupe Ensenada, Baja California, México",
     "lng": -116.634382,
     "name": "Barón Balché",
@@ -297,7 +297,7 @@
   },
   {
     "lat": 32.108692,
-    "type": 1,
+    "type": "vinedo",
     "address": "Viñedos de Chateau Camou, Ensenada, Baja California, México",
     "lng": -116.601176,
     "name": "Chateau Camou",
@@ -308,7 +308,7 @@
   },
   {
     "lat": 32.08587,
-    "type": 3,
+    "type": "hotel",
     "address": "Parcela A-1 s/n Col. Rusa de Guadalupe Valle de Guadalupe, Ensenada, Baja California, México",
     "lng": -116.622797,
     "name": "Adobe Guadalupe",
@@ -319,7 +319,7 @@
   },
   {
     "lat": 31.866918,
-    "type": 1,
+    "type": "vinedo",
     "address": "Km. 85.5 Carretera Federal #3 Tecate-Ensenada Rancho El Mogor, San Antonio de las Minas, Ensenada, Baja California México",
     "lng": -116.668209,
     "name": "Mogor Badan",
@@ -330,7 +330,7 @@
   },
   {
     "lat": 32.026181,
-    "type": 1,
+    "type": "vinedo",
     "address": "Rancho Mogorcito, Carretera Tecate-Ensenada Km 87 Valle de Guadalupe, Ensenada, Baja California México",
     "lng": -116.615324,
     "name": "Viñas de Garza",
@@ -341,7 +341,7 @@
   },
   {
     "lat": 32.026834,
-    "type": 1,
+    "type": "vinedo",
     "address": "Km. 87 Carretera Tecate-Ensenada, San Antonio de las Minas, Baja California, México",
     "lng": -116.61452,
     "name": "Sol y barro",
@@ -352,7 +352,7 @@
   },
   {
     "lat": 32.026402,
-    "type": 1,
+    "type": "vinedo",
     "address": "Km. 87 Carretera federal #3 Ensenada-Tecate, Baja California",
     "lng": -116.612637,
     "name": "Vinos Tres Mujeres",
@@ -363,7 +363,7 @@
   },
   {
     "lat": 32.075626,
-    "type": 1,
+    "type": "vinedo",
     "address": "Callejon Emiliano Zapata, El Porvenir (Guadalupe), 22750 Ensenada, Baja California",
     "lng": -116.624474,
     "name": "Viñedo Las Nubes",
@@ -374,7 +374,7 @@
   },
   {
     "lat": 32.075488,
-    "type": 1,
+    "type": "vinedo",
     "address": "Emiliano Zapata #680 Ejido El Porvenir, Ensenada, Baja California",
     "lng": -116.624241,
     "name": "Vinícola J.C. Bravo",
@@ -385,7 +385,7 @@
   },
   {
     "lat": 32.089828,
-    "type": 1,
+    "type": "vinedo",
     "address": "Camino a San José de la Zorra, Parcela 67, Ejido El Porvenir C.P. 22755 Ensenada, , Baja California",
     "lng": -116.629715,
     "name": "Emevé vinos",
@@ -396,7 +396,7 @@
   },
   {
     "lat": 32.039472,
-    "type": 1,
+    "type": "vinedo",
     "address": "La Villa del Valle, Ensenada, Baja California",
     "lng": -116.653739,
     "name": "Vena Cava",
@@ -407,7 +407,7 @@
   },
   {
     "lat": 32.039472,
-    "type": 3,
+    "type": "hotel",
     "address": "Valle de Guadalupe, Ensenada, Baja California",
     "lng": -116.653739,
     "name": "La Villa del Valle",
@@ -418,7 +418,7 @@
   },
   {
     "lat": 32.102189,
-    "type": 1,
+    "type": "vinedo",
     "address": "Ensenada-Tecate Km. 95.5 y 88.25. Carrertera Ensenada - Valle de Guadalupe , Baja California",
     "lng": -116.538166,
     "name": "Lafarga",
@@ -429,7 +429,7 @@
   },
   {
     "lat": 32.084195,
-    "type": 1,
+    "type": "vinedo",
     "address": "Ejido el Porvenir, Ensenada, Baja California",
     "lng": -116.632501,
     "name": "Cava Mazuelo",
@@ -440,7 +440,7 @@
   },
   {
     "lat": 32.101481,
-    "type": 1,
+    "type": "vinedo",
     "address": "Ejido el Porvenir, Ensenada, Baja California",
     "lng": -116.616883,
     "name": "Quinta Monasterio",
@@ -451,7 +451,7 @@
   },
   {
     "lat": 32.10492,
-    "type": 1,
+    "type": "vinedo",
     "address": "Ruta del Vino, Salida a San José de la Zorra, Valle de Guadalupe, Baja California",
     "lng": -116.6341,
     "name": "Vinos Santa Úrsula",
@@ -462,7 +462,7 @@
   },
   {
     "lat": 32.016982,
-    "type": 1,
+    "type": "vinedo",
     "address": "Comunidad de San Marcos Fraccionamiento 13, San Antonio de las minas, Ensenada , Baja California, México",
     "lng": -116.663626,
     "name": "Hacienda La lomita",
@@ -473,7 +473,7 @@
   },
   {
     "lat": 32.00219,
-    "type": 1,
+    "type": "vinedo",
     "address": "Ensenada , Baja California, México",
     "lng": -116.670309,
     "name": "Alximia - Vino elemental",
@@ -484,7 +484,7 @@
   },
   {
     "lat": 32.026993,
-    "type": 1,
+    "type": "vinedo",
     "address": "Km 12 + 800. Carretera Francisco Zarc - El tigre. Ensenada , Baja California, México",
     "lng": -116.672362,
     "name": "Viñas Pijoan",
@@ -495,7 +495,7 @@
   },
   {
     "lat": 31.981511,
-    "type": 1,
+    "type": "vinedo",
     "address": "Carretera Tecate-Ensenada Kilometro 93, San Antonio de las Minas 22766   Ensenada, Baja California, México",
     "lng": -116.647905,
     "name": "Viña de Liceaga",
@@ -506,7 +506,7 @@
   },
   {
     "lat": 31.983056,
-    "type": 1,
+    "type": "vinedo",
     "address": "m 92.5 Carretera Tecate-Ensenada San Antonio de Las Minas Ensenada, Baja California, México",
     "lng": -116.640679,
     "name": "Fratelli Pasini",
@@ -517,7 +517,7 @@
   },
   {
     "lat": 31.96953,
-    "type": 1,
+    "type": "vinedo",
     "address": "San Antonio de Las Minas Ensenada, Baja California, México",
     "lng": -116.666909,
     "name": "Rancho Velasco",
@@ -528,7 +528,7 @@
   },
   {
     "lat": 32.010949,
-    "type": 1,
+    "type": "vinedo",
     "address": "Rancho Chivatillo Km. 89 + 100 Carretera #3 Tecate-Ensenada, San Antonio de las Minas, Baja California, México",
     "lng": -116.643882,
     "name": "Xecue",
@@ -539,7 +539,7 @@
   },
   {
     "lat": 31.978362,
-    "type": 1,
+    "type": "vinedo",
     "address": "Carretera Tecate Ensenada Km 93.5 San Antonio de las Minas Ensenada, Baja California, México",
     "lng": -116.652307,
     "name": "Casa de Piedra",

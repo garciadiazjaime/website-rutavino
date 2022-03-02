@@ -12,7 +12,7 @@
 
 ### Feedmetj
 
-[Qué comer en Tijuana?](https://www.feedmetj.com/)
+[Restaurantes en Tijuana?](https://www.feedmetj.com/)
 
 ### Comprar Casa Tijuana
 
@@ -20,7 +20,7 @@
 
 ### Playami
 
-[Qué comer en Playas de Tijuana?](http://www.playami.com/)
+[Restaurantes en Playas de Tijuana?](http://www.playami.com/)
 
 ### Mint IT Media
 
