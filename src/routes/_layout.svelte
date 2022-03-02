@@ -32,7 +32,7 @@
 		</p>
 		<div>
 			<ul>
-				<li><a href="https://www.garitacenter.com/">Reporte de Garitas | Linea Tijuana / San Ysidro - Otay</a></li>
+				<li><a href="https://www.garitacenter.com/">Reporte de Garitas</a></li>
 				<li><a href="https://www.feedmetj.com/">Restaurantes en Tijuana</a></li>
 				<li><a href="http://www.playami.com">Restaurantes en Playas de Tijuana</a></li>
 				<li><a href="https://www.comprarcasatijuana.com/">Comprar Casa en Tijuana</a></li>
