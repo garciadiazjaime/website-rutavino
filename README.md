@@ -6,17 +6,13 @@
 
 [Reporte de Garitas Tijuana](https://www.garitacenter.com/)
 
-### Noticias México
+### Papa Johns Coupons and Promo Codes
 
-[Últimas Noticias de México](https://www.noticiasmexico.org/)
+[Papa Johns Coupons and Promo Codes](https://coupons.garitacenter.com/)
 
 ### Feedmetj
 
 [Restaurantes en Tijuana?](https://www.feedmetj.com/)
-
-### Comprar Casa Tijuana
-
-[Casas en Venta en Tijuana](https://www.comprarcasatijuana.com/)
 
 ### Playami
 
